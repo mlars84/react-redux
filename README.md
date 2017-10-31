@@ -33,4 +33,14 @@ you refactor to class (fine to use a class even if you don't need it).
 - Handling events in React - Two Steps
   - First: declare an event handler - function that should be ran whenever the event occurs
   - Second: we pass the event handler to the element we want to monitor for events e.g. input
-- 
+- State:
+  - a plain js object that is used to record and react to user events. Each class based component we define
+  has it's own state obj. Whenever a component is changed the component immediately re-renders and forces
+  it's children to re-render as well.
+- All JS classes have a special function called `constructor(){}`. It is the first and only func called automatically 
+whenever a new instance of the class is created a la inside index.js. It is reserved for doing some setup inside our 
+class, like initializing some variables and initializing state. 
+- `super()`: When we define a method that is already defined on the parent class, Component, we can call that method 
+on the parent class by calling `super()`
+- Whenever we use state, we initialize it by creating a new obj and assigning it to `this.state`. The obj we pass
+will also contain properties that we want to record in state. 
