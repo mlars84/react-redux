@@ -1,10 +1,23 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+import SearchBar from './components/search_bar'
+import VideoDetail from './components/video_detail'
+import VideoListItem from './components/video_list_item'
+import VideoList from './components/video_list'
 
 const API_KEY = 'AIzaSyDL0r5DA1SxTB1CH89S2B3JAjfZTnJAdZg'
 
-const App = function() {
-  return <div>hi</div>
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <SearchBar />
+        <VideoDetail />
+        <VideoListItem />
+        <VideoList />
+      </div>
+    )
+  }
 }
 
 ReactDOM.render(

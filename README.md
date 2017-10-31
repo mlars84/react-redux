@@ -23,3 +23,7 @@ Click [here](https://github.com/StephenGrider/ReactStarter/releases) then downlo
 > npm install
 > npm start
 ```
+
+## Notes
+- Search Bar for youtube API
+  - covers exporting modules, classes and state.
