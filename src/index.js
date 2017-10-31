@@ -9,6 +9,7 @@ const API_KEY = 'AIzaSyDL0r5DA1SxTB1CH89S2B3JAjfZTnJAdZg'
 
 class App extends Component {
   render() {
+    console.log('App props:', this.props)
     return (
       <div>
         <SearchBar />

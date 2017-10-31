@@ -27,3 +27,10 @@ Click [here](https://github.com/StephenGrider/ReactStarter/releases) then downlo
 ## Notes
 - Search Bar for youtube API
   - covers exporting modules, classes and state.
+- Functional Component vs. ES6 Class: Stephen recommends beginning with a 
+functional component and only when you decide you need added functionality should
+you refactor to class (fine to use a class even if you don't need it).
+- Handling events in React - Two Steps
+  - First: declare an event handler - function that should be ran whenever the event occurs
+  - Second: we pass the event handler to the element we want to monitor for events e.g. input
+- 
