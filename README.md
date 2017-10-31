@@ -45,4 +45,8 @@ on the parent class by calling `super()`
 - Whenever we use state, we initialize it by creating a new obj and assigning it to `this.state`. The obj we pass
 will also contain properties that we want to record in state. 
 - ALWAYS MANIPULATE STATE WITH `this.setState({})`!!!
--  
+
+### Controlled Component (has it's value set by state)
+- when the input ^ that it's value is provided by this.state.term, we turn it into a controlled component/form element
+- value only changes when state changes
+- 
