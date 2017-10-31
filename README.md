@@ -44,3 +44,5 @@ class, like initializing some variables and initializing state.
 on the parent class by calling `super()`
 - Whenever we use state, we initialize it by creating a new obj and assigning it to `this.state`. The obj we pass
 will also contain properties that we want to record in state. 
+- ALWAYS MANIPULATE STATE WITH `this.setState({})`!!!
+-  
