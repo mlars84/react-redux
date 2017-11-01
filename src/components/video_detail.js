@@ -1,6 +1,10 @@
 import React from 'react'
+import PacmanLoader from './Loader'
 
 const VideoDetail = ({video}) => {
+  if (!video) {
+    return <PacmanLoader />
+  }
 
   const videoName = video.snippet.title
   const description = video.snippet.description
