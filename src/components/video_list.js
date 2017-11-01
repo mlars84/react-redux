@@ -7,7 +7,7 @@ class VideoList extends Component {
     const videos = this.props.videos
 
     const videoItems = videos.map((video) => {
-      return <VideoListItem video={video}/>
+      return <VideoListItem key={video.etag} video={video}/>
     })
 
     return (
