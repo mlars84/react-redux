@@ -32,7 +32,7 @@ functional component and only when you decide you need added functionality shoul
 you refactor to class (fine to use a class even if you don't need it).
 - Handling events in React - Two Steps
   - First: declare an event handler - function that should be ran whenever the event occurs
-  - Second: we pass the event handler to the element we want to monitor for events e.g. input
+  - Secon d: we pass the event handler to the element we want to monitor for events e.g. input
 - State:
   - a plain js object that is used to record and react to user events. Each class based component we define
   has it's own state obj. Whenever a component is changed the component immediately re-renders and forces

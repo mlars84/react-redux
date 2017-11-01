@@ -3,12 +3,16 @@ import SearchBar from './components/search_bar'
 import VideoDetail from './components/video_detail'
 import VideoListItem from './components/video_list_item'
 import VideoList from './components/video_list'
+import YTSearch from 'youtube-api-search' 
 
 const API_KEY = 'AIzaSyDL0r5DA1SxTB1CH89S2B3JAjfZTnJAdZg'
 
+YTSearch({key: API_KEY, term: 'michael jordan'}, function(data) {
+  console.log(data)
+})
+
 class App extends Component {
   render() {
-    // console.log('App props:', this.props)
     return (
       <div>
         <SearchBar />
