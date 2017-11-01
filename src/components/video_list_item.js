@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 
-// added {video} instead of props is equal to const video = props.video
-const VideoListItem = ({video}) => {
-
-  console.log(video.snippet)
+// added {video} instead of props is equal to const video = props.video / same with onVideoSelect
+const VideoListItem = ({video, onVideoSelect}) => {
 
   const imageUrl = video.snippet.thumbnails.default.url
   const videoName = video.snippet.title
   
   return (
-    <li className='list-group-item'>
+    <li onClick={() => onVideoSelect(video)} className='list-group-item'>
       <div className='video-list media'>
         <div className='media-left'>
           <img className='media-object' src={imageUrl}/>
