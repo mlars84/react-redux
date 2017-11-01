@@ -3,7 +3,9 @@ import React, { Component } from 'react'
 class VideoList extends Component {
   render() {
     return (
-      <div style={{border:'4px solid black'}}>VideoList div</div>
+      <ul className="col-md-4 list-group">
+        {this.props.videos.length}
+      </ul>
     )
   }
 }
