@@ -13,7 +13,7 @@ const VideoDetail = ({video}) => {
   console.log('url:', url)
 
   return (
-    <div className='video-detail col-md-8'>
+    <div className='video-detail col-md-7'>
       <div className='embed-responsive embed-responsive-16by9'>
         <iframe className='embed-responsive-item' src={url}></iframe>
       </div>

@@ -1,16 +1,9 @@
-html, body{
-  padding: 5vh 5vw;
-}
-
-.app-main {
-  display: flex;
-  flex-direction: column;
-}
-
-.jumbotron {
-  background: #7bafd0;
+.header {
+  background: black;
   text-align: center;
   font-size: 32px;
+  font-weight: 500;
+  color: white;
 }
 
 .search-bar {
@@ -20,6 +13,7 @@ html, body{
 
 .search-bar input {
   width: 75%;
+  text-align: center;
 }
 
 .video-item img {
@@ -40,3 +34,7 @@ html, body{
 .list-group-item:hover {
   background-color: #7bafd0;
 } 
+
+.footer {
+  text-align: center;
+}

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import _ from 'lodash'
 import SearchBar from './components/search_bar'
 import VideoDetail from './components/video_detail'
 import VideoListItem from './components/video_list_item'
@@ -28,15 +29,18 @@ class App extends Component {
   }
 
   render() {
+    const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300)
+
     return (
-      <div className="app-main">
-        <header className="jumbotron">React app with Youtube API</header>
-        <SearchBar onSearchTermChange={term => this.videoSearch(term)} />
+      <div>
+        {<header className="header">React app with Youtube API</header>}
+        <SearchBar onSearchTermChange={videoSearch} />
         <VideoDetail video={this.state.selectedVideo}/>
         <VideoList 
           onVideoSelect={selectedVideo => this.setState({selectedVideo})}
           videos={this.state.videos} 
         />
+        <footer className="footer">Built with love in Saint Paul, MN | ©2017 matthewlarson/dev</footer>
       </div>
     )
   }
