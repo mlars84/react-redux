@@ -4,14 +4,18 @@ import VideoDetail from './components/video_detail'
 import VideoListItem from './components/video_list_item'
 import VideoList from './components/video_list'
 import YTSearch from 'youtube-api-search' 
-
-const API_KEY = 'AIzaSyDL0r5DA1SxTB1CH89S2B3JAjfZTnJAdZg'
-
-YTSearch({key: API_KEY, term: 'michael jordan'}, function(data) {
-  console.log(data)
-})
+const API_KEY = 'AIzaSyA7jxGg_MhIDKg2ooKsX6iw4NGrbVSotrs'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = { videos: [] }
+
+    YTSearch({key: API_KEY, term: 'michael jordan'}, (videos) => {
+      this.setState({ videos })
+    })
+  }
   render() {
     return (
       <div>
