@@ -24,9 +24,12 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="app-main">
+        <header className="jumbotron">React app with Youtube API</header>
         <SearchBar />
+        <br />
         <VideoDetail video={this.state.selectedVideo}/>
+        <br />
         <VideoList 
           onVideoSelect={selectedVideo => this.setState({selectedVideo})}
           videos={this.state.videos} 
