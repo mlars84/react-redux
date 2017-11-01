@@ -15,21 +15,24 @@ class App extends Component {
       selectedVideo: null 
     }
 
-    YTSearch({key: API_KEY, term: 'michael jordan'}, (videos) => {
+    this.videoSearch('michael jordan')
+  }
+
+  videoSearch(term) {
+    YTSearch({key: API_KEY, term: term}, (videos) => {
       this.setState({ 
         videos: videos,
         selectedVideo: videos[0]
       })
     })
   }
+
   render() {
     return (
       <div className="app-main">
         <header className="jumbotron">React app with Youtube API</header>
-        <SearchBar />
-        <br />
+        <SearchBar onSearchTermChange={term => this.videoSearch(term)} />
         <VideoDetail video={this.state.selectedVideo}/>
-        <br />
         <VideoList 
           onVideoSelect={selectedVideo => this.setState({selectedVideo})}
           videos={this.state.videos} 
