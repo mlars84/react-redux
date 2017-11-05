@@ -11,4 +11,13 @@
     3 - Like/Dislike Button
     4 - TextList (chat messages)
     5 - TextItem (individual message)
-- 
+
+### Reducer
+  - A function that returns a piece of the application state. Since our application can have many pieces of state, we can have many reducers. You can have as many reducers as pieces of state. At the end of the day, reducer should just return an array of objects. 
+
+### Containers
+  - A Container is a React Component that has a direct connection to the state managed by Redux.
+  - React-Redux 
+    - forms the bridge between both libraries
+    - the only time we get the bridge available is in Containers.
+  - Containers are referred to as "Smart Components" as opposed to a normal/dumb component, which does not have any direct connection to Redux. 
