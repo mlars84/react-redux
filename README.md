@@ -1,63 +1,14 @@
-# ReduxSimpleStarter
-
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
-
-### Getting Started
-
-There are two methods for getting started with this repo.
-
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
-
-```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
-```
-
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
-> npm start
-```
-
-## Notes
-  - Search Bar for youtube API
-    - covers exporting modules, classes and state.
-  - Functional Component vs. ES6 Class: Stephen recommends beginning with a 
-  functional component and only when you decide you need added functionality should
-  you refactor to class (fine to use a class even if you don't need it).
-  - Handling events in React - Two Steps
-    - First: declare an event handler - function that should be ran whenever the event occurs
-    - Secon d: we pass the event handler to the element we want to monitor for events e.g. input
-  - State:
-    - a plain js object that is used to record and react to user events. Each class based component we define
-    has it's own state obj. Whenever a component is changed the component immediately re-renders and forces
-    it's children to re-render as well.
-  - All JS classes have a special function called `constructor(){}`. It is the first and only func called automatically 
-  whenever a new instance of the class is created a la inside index.js. It is reserved for doing some setup inside our 
-  class, like initializing some variables and initializing state. 
-  - `super()`: When we define a method that is already defined on the parent class, Component, we can call that method 
-  on the parent class by calling `super()`
-  - Whenever we use state, we initialize it by creating a new obj and assigning it to `this.state`. The obj we pass
-  will also contain properties that we want to record in state. 
-  - ALWAYS MANIPULATE STATE WITH `this.setState({})`!!!
-
-### Controlled Component (has it's value set by state)
-  - when the input ^ that it's value is provided by this.state.term, we turn it into a controlled component/form element
-  - value only changes when state changes
-
-### YouTube API
-  - Down ward Flow (flows from parent to child)
-
-### Redux
-  - A predictable state container (collection of all the data that describes the app, includes hard data like list of books and metadata like currently selected book) for javascript applications.
-  - Data contained in the application: `List of Books`, `Currently Selected Book`. 
-  - React represents the views and UI contained in the application: `List View`, `List Item` and `Detail View`
-  - Both created a Working, Usable App. 
-  - With Redux, we centralize all of the app's data into a single object, which then refer to as `the state`. Other frameworks have different collections/stores. 
-  
- 
+### Tinder/Redux example
+  - Data/State/Application State
+    1 - Users(w/ images and chat logs)
+    2 - list of current users with a conversation
+    3 - list of users to be reviewed
+    4 - currently viewed conversation
+    5 - currently viewed user for image swiping
+  - Views/React/UI/Components/Containers
+    1 - ImageCard
+    2 - ConversationList (open conversations)
+    3 - Like/Dislike Button
+    4 - TextList (chat messages)
+    5 - TextItem (individual message)
+- 
