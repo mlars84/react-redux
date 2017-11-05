@@ -21,3 +21,7 @@
     - forms the bridge between both libraries
     - the only time we get the bridge available is in Containers.
   - Containers are referred to as "Smart Components" as opposed to a normal/dumb component, which does not have any direct connection to Redux. 
+  - Only the most parent component that uses a particular piece of state needs to be connected to Redux.
+
+  - `import { connect } from 'react-redux'`: connect() takes a function and component and produces a container. The container is a component that is aware of the state is contained by Redux. The mapStateToProps takes state as argument and returns and object that is the props. 
+  - If state ever changes, mapStateToProps() will instantly re-render.
