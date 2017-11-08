@@ -4,6 +4,7 @@ export default function() {
     {title: 'X-men'},
     {title: 'How the Grinch Stole Christmas'},
     {title: 'Harry Potter'},
-    {title: 'The Dark Tower'}
+    {title: 'The Dark Tower'},
+    {title: 'The Grapes of Wrath'}
   ]
 }

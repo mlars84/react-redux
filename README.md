@@ -30,4 +30,5 @@
   - Actions and Action creators are for having active state aka changing state.
   - `Action Creator` is just a function that returns an object. The object is then automatically sent to all of the different reducers inside the app. Reducers can choose to return a different piece of state depending on what the action is. The newly returned piece of state then gets piped into the app state/react app and causes to re-render.
   - once all reducers process action and return state, they notify containers of change to state and re-render with new props.
-  -  
+  -  Actions always contain a type and sometimes a payload. Type is always UPPER_CASE, usually a string, always separated by _:
+  - 

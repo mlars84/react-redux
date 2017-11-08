@@ -1,4 +1,5 @@
 const Dotenv = require('dotenv-webpack');
+const DashboardPlugin = require('webpack-dashboard/plugin');
 
 module.exports = {
   entry: [
@@ -8,7 +9,8 @@ module.exports = {
     new Dotenv({
       path: '/.env', // Path to .env file (this is the default) 
       safe: true // load .env.example (defaults to "false" which does not use dotenv-safe) 
-    })
+    }),
+    new DashboardPlugin({ port: 7000 })
   ],
   output: {
     path: __dirname,
