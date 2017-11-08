@@ -25,3 +25,9 @@
 
   - `import { connect } from 'react-redux'`: connect() takes a function and component and produces a container. The container is a component that is aware of the state is contained by Redux. The mapStateToProps takes state as argument and returns and object that is the props. 
   - If state ever changes, mapStateToProps() will instantly re-render.
+
+### Actions 
+  - Actions and Action creators are for having active state aka changing state.
+  - `Action Creator` is just a function that returns an object. The object is then automatically sent to all of the different reducers inside the app. Reducers can choose to return a different piece of state depending on what the action is. The newly returned piece of state then gets piped into the app state/react app and causes to re-render.
+  - once all reducers process action and return state, they notify containers of change to state and re-render with new props.
+  -  
